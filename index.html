@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+         </div>
+        <div class="container">
+            <div class="box">
+                <section class="box_upper">
+                    <h1>Expense Tracker</h1>
+                    <div class="balance">
+                        <h2  id="netAmount">Rs. 0</h2>
+                    </div>
+                </section>
+                <section class="transaction_container">
+                    <h3>Transaction</h3>
+                    <hr>
+                    <div class="transactions">
+                        <div class="indiv">
+                            <div class="content">
+                                <div class="left">
+                                    <p>example</p>
+                                    <p>Rs 200</p>
+                                </div>
+                                <div class="status credit">C</div>
+                            </div>
+                            <div class="lower">
+                                <div class="icon">
+                                    <img src="./icons/pen.svg" alt="pen"/>
+                                </div>
+                                <div class="icon">
+                                    <img src="./icons/trash.svg" alt="trash"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="transaction_form">
+                        <h3>Add Transaction</h3>
+                        <form id="transactionForm">
+                            <div class="inputs">
+                                <div class="form_control">
+                                    <label for="text">Text</label>
+                                    <input type="text" name="text" id="text" placeholder="Enter Description"/>
+                                </div>
+                                <div class="form_control">
+                                    <label for="Amount">Amount</label>
+                                    <input type="number" name="amount" id="Amount" placeholder="Enter Amount">
+                                </div>
+                            </div>
+
+                            <div class="button_container">
+                                <button type="submit" id="earn">
+                                    <p id="earning">Rs 0</p>
+                                    <p>Earnings</p>
+                                </button>
+                                <button type="submit" id="expense">
+                                    <p id="expensee">Rs 0</p>
+                                    <p>Expense</p>
+                                </button>
+                            </div>
+                            
+                        </form>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+    </body>
+</html>
