@@ -256,6 +256,11 @@ form input:focus-visible{
     background-color: #ff0000;
 }
 
+.transactions-container {
+    max-height: 300px; /* Adjust the value as needed */
+    overflow-y: auto;
+}
+
 
 
 @media(max-width:500px){
